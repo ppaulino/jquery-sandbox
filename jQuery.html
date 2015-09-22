@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My jQuery Basic Assignment</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header_container">
+	<div id="header">
+		<h1 id="title">jQuery Assignment 1</h1>
+		<div id="nav">
+			<ul>
+				<li><a href="#addclass">.addClass</a></li>
+				<li><a href="#after">.after</a></li>
+				<li><a href="#append">.append</a></li>
+				<li><a href="#attr">.attr</a></li>
+				<li><a href="#before">.before</a></li>
+				<li><a href="#html">.html</a></li>
+				<li><a href="#text">.text</a></li>
+				<li><a href="#val">.val</a></li>
+				<li><a href="#toggle">.toggle</a></li>
+				<li><a href="#hide">.hide</a></li>
+				<li><a href="#show">.show</a></li>
+				<li><a href="#slidedown">.slideDown</a></li>
+				<li><a href="#slidetoggle">.slideToggle</a></li>
+				<li><a href="#slideup">.slideUp</a></li>
+				<li><a href="#fadeout">.fadeOut</a></li>
+				<li><a href="#fadein">.fadeIn</a></li>
+				<li><a href="#focus">.focus</a></li>
+				<li><a href="#click">.click</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="main">
+		<div id="addclass" class="box">
+			<div class="button_col">
+				<button id="button1">.addClass</button>
+			</div>
+			<div class="content">
+				<h2>.addClass</h2>
+				<p id="myParagraph1">Click the button to add class 'red' to this paragraph.</p>
+			</div>
+		</div>
+		<div id="after" class="box">
+			<div class="button_col">
+				<button id="button2">.after</button>
+			</div>
+			<div class="content">
+				<h2>.after</h2>
+				<p id="myParagraph2">Click the button to add a new sentence after this paragraph.</p>
+			</div>
+		</div>
+		<div id="append" class="box">
+			<div class="button_col">
+				<button id="button3">.append</button>
+			</div>
+			<div class="content">
+				<h2>.append</h2>
+				<p id="myParagraph3">Click the button to append "is awesome" to all h2 and p tags on this page.</p>
+			</div>
+		</div>
+		<div id="attribute" class="box">
+			<div class="button_col">
+				<button id="button4">.attr</button>
+			</div>
+			<div class="content">
+				<h2>.attr</h2>
+				<p id="myParagraph4">Click the button to get the id of this paragraph and display it below.</p>
+				<p>The id of this paragraph is: </p>
+				<div id="output1"></div>
+			</div>
+		</div>
+		<div id="before" class="box">
+			<div class="button_col">
+				<button id="button5">.before</button>
+			</div>
+			<div class="content">
+				<h2>.before</h2>
+				<p id="myParagraph5">Click the button to add a new line before this paragraph.</p>
+			</div>
+		</div>
+		<div id="html" class="box">
+			<div class="button_col">
+				<button id="button6">.html</button>
+			</div>
+			<div class="content">
+				<h2>.html</h2>
+				<p id="myParagraph6">Click the button to replace all the text in this paragraph.</p>
+			</div>
+		</div>
+		<div id="text" class="box">
+			<div class="button_col">
+				<button id="button7">.text</button>
+			</div>
+			<div class="content">
+				<h2>.text</h2>
+				<p id="myParagraph7">Click the button to get the id of this paragraph and display it below.<br>
+				The id of this paragraph is: </p>
+				<div id="output2"></div>
+			</div>
+		</div>
+		<div id="val" class="box">
+			<div class="button_col">
+				<!-- <button id="button8">.val</button> -->
+			</div>
+			<div class="content">
+				<h2>.val</h2>
+				<p>Enter text into the form below and its value will display below it.</p>
+				<input type="text" value="" placeholder="enter text here">
+				<p id="myParagraph8"></p>
+			</div>
+		</div>
+		<div id="toggle" class="box">
+			<div class="button_col">
+				<button id="button9">.toggle</button>
+			</div>
+			<div class="content">
+				<h2>.toggle</h2>
+				<p id="myParagraph9">Click the button to toggle this paragraph to display.</p>
+			</div>
+		</div>
+		<div id="hide" class="box">
+			<div class="button_col">
+				<button id="button10">.hide</button>
+			</div>
+			<div class="content">
+				<h2>.hide</h2>
+				<p id="myParagraph10">Click the button to hide all h2 headings on this page. See below to show again.</p>
+			</div>
+		</div>
+		<div id="show" class="box">
+			<div class="button_col">
+				<button id="button11">.show</button>
+			</div>
+			<div class="content">
+				<h2>.show</h2>
+				<p id="myParagraph11">Click the button to show all h2 headings on this page.</p>
+			</div>
+		</div>
+		<div id="slidedown" class="box">
+			<div class="button_col">
+				<button id="button12a">.hide</button>
+				<button id="button12b">.slideDown</button>
+			</div>
+			<div class="content">
+				<h2>.slideDown</h2>
+				<p>Click the .hide button first to hide the image and then click the .slideDown button to start slideDown effect.</p>
+				<img id="logo12" src="images/logo.png" alt="Coding Dojo">
+			</div>
+		</div>
+		<div id="slidetoggle" class="box">
+			<div class="button_col">
+				<button id="button13">.slideToggle</button>
+			</div>
+			<div class="content">
+				<h2>.slideToggle</h2>
+				<p>Click on button to display or hide the image with a sliding motion.</p>
+				<img id="logo13" src="images/logo.png" alt="Coding Dojo">
+			</div>
+		</div>
+		<div id="slideup" class="box">
+			<div class="button_col">
+				<!-- <button id="button14">.slideUp</button> -->
+			</div>
+			<div class="content">
+				<h2>.slideUp</h2>
+				<div>
+				  <button class="slideup_btns">Button One</button>
+				  <input type="text" value="One">
+				</div>
+				<div>
+				  <button class="slideup_btns">Button Two</button>
+				  <input type="text" value="Two">
+				</div>
+				<div>
+				  <button class="slideup_btns">Button Three</button>
+				  <input type="text" value="Three">
+				</div>
+				<div id="msg"></div>
+			</div>
+		</div>
+		<div id="fadeout" class="box">
+			<div class="button_col">
+				<button id="button15">.fadeOut</button>
+			</div>
+			<div class="content">
+				<h2>.fadeOut</h2>
+				<img id="logo15" src="images/logo.png" alt="Coding Dojo">
+			</div>
+		</div>
+		<div id="fadein" class="box">
+			<div class="button_col">
+				<button id="button16a">.hide</button>
+				<button id="button16b">.fadeIn</button>
+			</div>
+			<div class="content">
+				<h2>.fadeIn</h2>
+				<img id="logo16" src="images/logo.png" alt="Coding Dojo">
+			</div>
+		</div>
+		<div id="focus" class="box">
+			<div class="button_col">
+				<!-- <button id="button17">.focus</button> -->
+			</div>
+			<div class="content">
+				<h2>.focus</h2>
+				<p><input type="text"> <span>focus</span></p>
+				<p><input type="password"> <span>focus</span></p>
+			</div>
+		</div>
+		<div id="click" class="box">
+			<div class="button_col">
+				<button id="button18">.click</button>
+			</div>
+			<div class="content">
+				<h2>.click</h2>
+				<p class="para">Click button to make all .para slideUp.</p>
+				<p class="para">Second paragraph</p>
+				<p class="para">Third paragraph</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
